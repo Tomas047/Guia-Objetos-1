@@ -14,7 +14,7 @@ public class Main {
 
         System.out.println("sup, brah");
 
- */
+
 
         Empleado a = new Empleado();
 
@@ -29,6 +29,19 @@ public class Main {
 
         a.aumento(15);
         System.out.println("El salario anual de "+ a.getNombre() + " es de $" + a.salarioAnual());
+
+ */
+
+        ItemDeVenta x = new ItemDeVenta();
+
+        x.setID("000000001");
+        x.setDescripcion("Taquitos de Pollo MAROLIO");
+        x.setCant(2);
+        x.setpUnitario(50.5);
+
+        x.mostrarItem();
+
+        System.out.println("El precio total de " + x.getCant() + " " + x.getDescripcion() + " es de $" + x.calcularTotal());
 
     }
 }
